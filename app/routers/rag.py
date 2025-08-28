@@ -5,9 +5,9 @@ from typing import List, Optional
 from datetime import datetime
 
 from core import database, crud
-from core.memory import RedisChatMemory  # your Redis memory wrapper
-from core.qdrant_client import QdrantClientWrapper  # your Qdrant client
-from core.llm import generate_answer  # your LLM wrapper using embeddings & context
+from core.memory import RedisChatMemory  # Redis memory wrapper
+from core.qdrant_client import QdrantClientWrapper  #Qdrant client
+from core.llm import generate_answer  #using embeddings & context
 
 router = APIRouter(prefix="/rag", tags=["Conversational RAG"])
 
